@@ -1,0 +1,31 @@
+@use './variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card {
+  background: $color-surface;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+}
+
+@mixin container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin scrollbar-hidden {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin text-muted {
+  color: $color-text-muted;
+}

@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+button,
+a {
+  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
